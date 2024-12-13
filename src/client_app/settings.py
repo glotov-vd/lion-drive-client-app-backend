@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'client_app',
     'cars',
     'django.contrib.postgres',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
