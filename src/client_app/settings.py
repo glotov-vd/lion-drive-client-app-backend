@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'client_app',
     'cars',
+    'comments',
+    'tarifs',
     'django.contrib.postgres',
     'rest_framework',
 ]
@@ -77,11 +79,11 @@ WSGI_APPLICATION = 'client_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'test_db',
+        'NAME': 'cars_rent_db',
         'USER': 'postgres',
         'PASSWORD': 'pass',
-        'HOST': '193.124.203.191',
-        'PORT': '5438',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
