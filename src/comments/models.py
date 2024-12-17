@@ -27,7 +27,7 @@ class Comments(models.Model):
     
     comment_text = models.TextField(null=False)
     
-    rating_score = models.models.PositiveIntegerField(
+    rating_score = models.PositiveIntegerField(
         default=0,
         validators=[
             MinValueValidator(0),
