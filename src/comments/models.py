@@ -25,7 +25,7 @@ class Comments(models.Model):
     
     car_id = models.ForeignKey(Car, on_delete=models.CASCADE)
     
-    comment = models.TextField(null=False)
+    comment_text = models.TextField(null=False)
     
     rating_score = models.models.PositiveIntegerField(
         default=0,
